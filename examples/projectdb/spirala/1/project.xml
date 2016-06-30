@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <arrow from="p7" to="t7" name="x13"/>
+  <arrow from="t6" to="p7" name="x12"/>
+  <arrow from="p6" to="t6" name="x11"/>
+  <arrow from="t5" to="p6" name="x10"/>
+  <arrow from="p5" to="t5" name="x9"/>
+  <arrow from="t4" to="p5" name="x8"/>
+  <arrow from="p4" to="t4" name="x7"/>
+  <arrow from="t3" to="p4" name="x6"/>
+  <arrow from="p3" to="t3" name="x5"/>
+  <arrow from="t2" to="p3" name="x4"/>
+  <arrow from="p2" to="t2" name="x3"/>
+  <arrow from="t1" to="p2" name="x2"/>
+  <arrow from="p1" to="t1" name="x1"/>
+  <place point_x="401" point_y="393" name="p12" value=""/>
+  <place point_x="612" point_y="521" name="p11" value=""/>
+  <place point_x="613" point_y="733" name="p10" value=""/>
+  <place point_x="204" point_y="842" name="p9" value=""/>
+  <place point_x="164" point_y="534" name="p8" value=""/>
+  <place point_x="202" point_y="301" name="p7" value=""/>
+  <place point_x="431" point_y="118" name="p6" value=""/>
+  <place point_x="774" point_y="111" name="p5" value=""/>
+  <place point_x="913" point_y="271" name="p4" value=""/>
+  <place point_x="912" point_y="519" name="p3" value=""/>
+  <place point_x="910" point_y="755" name="p2" value=""/>
+  <place point_x="743" point_y="952" name="p1" value="1"/>
+  <transition point_x="582" point_y="387" name="t11" condition="x21 == 1" mode="x22 = 0" priority="1"/>
+  <transition point_x="583" point_y="617" name="t10" condition="x19 == 0" mode="x20 = 1" priority="1"/>
+  <transition point_x="404" point_y="776" name="t9" condition="x17 == 1" mode="x18 = 0" priority="1"/>
+  <transition point_x="135" point_y="675" name="t8" condition="x15 == 0" mode="x16 = 1" priority="1"/>
+  <transition point_x="133" point_y="409" name="t7" condition="x13 == 1" mode="x14 = 0" priority="1"/>
+  <transition point_x="258" point_y="201" name="t6" condition="x11 == 0" mode="x12 = 1" priority="1"/>
+  <transition point_x="607" point_y="58" name="t5" condition="x9 == 1" mode="x10 = 0" priority="1"/>
+  <transition point_x="883" point_y="152" name="t4" condition="x7 == 0" mode="x8 = 1" priority="1"/>
+  <transition point_x="883" point_y="385" name="t3" condition="x5 == 1" mode="x6 = 0" priority="1"/>
+  <transition point_x="881" point_y="638" name="t2" condition="x3 == 0" mode="x4 = 1" priority="1"/>
+  <transition point_x="880" point_y="871" name="t1" condition="x1 == 1" mode="x2 = 0" priority="1"/>
+  <arrow from="t7" to="p8" name="x14"/>
+  <arrow from="p8" to="t8" name="x15"/>
+  <arrow from="t8" to="p9" name="x16"/>
+  <arrow from="p9" to="t9" name="x17"/>
+  <arrow from="t9" to="p10" name="x18"/>
+  <arrow from="p10" to="t10" name="x19"/>
+  <arrow from="t10" to="p11" name="x20"/>
+  <arrow from="p11" to="t11" name="x21"/>
+  <arrow from="t11" to="p12" name="x22"/>
+</pn>
+

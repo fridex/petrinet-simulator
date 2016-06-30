@@ -1,0 +1,162 @@
+<body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src=":/files/icon.png" /></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:x-large; font-weight:600;">PN2012 v0.1a</span></p>
+<p align="center" style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:large; font-weight:600;">Petri net editor and simulator</span></p>
+<p align="center" style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:large; font-weight:600;">Authors</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Fridolin Pokorny &lt;<a href="mailto:fridex.devel@gmail.com"><span style=" text-decoration: underline; color:#0000ff;">fridex.devel@gmail.com</span></a>&gt;<br />Miroslav Lisik &lt;<a href="mailto:xlisik00@stud.fit.vutbr.cz"><span style=" text-decoration: underline; color:#0000ff;">xlisik00@stud.fit.vutbr.cz</span></a>&gt;</p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:8px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="center" style=" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Brno University of Technology<br />Faculty of Information Technology<br />2012</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+
+<!--------------------------------------------------------------------------- -->
+<hr />
+<ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#connecting">Connecting to server</a></li>
+    <li><a href="#editing">Creating and editing Petri net</a></li>
+    <li><a href="#repository">Remote repository</a></li>
+    <li><a href="#simulation">Simulation</a></li>
+    <li><a href="#syntax">Syntax and operators</a></li>
+    <li><a href="#appearance">Appearance and configuration</a></li>
+</ol>
+<hr />
+<h2><a name="introduction">Introduction</a></h2>
+<p>
+<i>PN2012</i> is a Petri net simulator and editor. It was developed as a school
+project at Faculty of Information Technology, University of Technology in Brno.
+Application consists of two parts - a server and a client-side editor. Editor is
+used to edit and create new Petri nets. Petri nets can be simulated on server,
+which can be used as a remote repository for storing various projects in
+different versions created by registered users.
+</p>
+
+<hr />
+<h2><a name="connecting">Connecting to server</a></h2>
+<p>
+If you want to store your net in a remote repository or you want to simulate
+your Petri net, you have to be connected to the server.
+</p>
+
+<p>
+To connect to the remote server, select <i>Repository</i> from menu bar and then
+click on <i>Connect</i>. A new window with connection information will appear.
+Specify <i>Server</i> field and edit <i>Port</i> number to connect to. Then set
+up your login information to authorise yourself on server-side. If you want to
+create new account, check <i>Register new user</i>.
+</p>
+
+<p>
+If authorisation or registration was successful, you will be able to simulate,
+view simulation log, save your project in repository or download projects from
+repository.
+</p>
+
+<hr />
+<h2><a name="editing">Creating and editing Petri net</a></h2>
+
+<p>
+You can select <i>Arrow</i> (arc), <i>Place</i> or <i>Transition</i> from
+toolbox to be placed to an area. Once you place selected item to a scene, you
+can move item by selecting item and holding left mouse button. Arrows connected
+to the moved item will be automatically adjusted. You can remove item from scene
+as well, by selecting <i>Remove item</i> icon from toolbar and clicking on item
+you want to remove. Arrows will be deleted automatically to respect net
+consistency.
+</p>
+
+<p>
+To adjust or enter values for an item select <i>Edit</i> icon from toolbar and
+then select the item you want to edit. Based on the item you selected, an edit
+window will appear to adjust item information. If you select a place, you can
+adjust place name and tokens, which are stored in the place. On the other hand,
+if you select a transition, you can adjust a condition which has to be true for
+tokens to pass the transition.  Setting up mode you specify output of the
+transition.  You can edit name of the selected transition as well. If you select
+an arrow, you can edit arrow name.
+</p>
+
+<p>
+Petri net can be saved using <i>File - Save</i> or <i>File - Save as</i>
+mechanism. Specify a file location and a file name to save the net. Once you
+save your net, application will remember the location and you can use just
+<i>CTRL + S</i> key binding to overwrite older version. If you want to load
+previously stored net, select <i>File - Open</i> and Petri net will be opened in
+new tab.  Now you can edit or simulate your net.
+<p>
+
+<hr />
+<h2><a name="repository">Remote repository</a></h2>
+<p>
+Once you are logged in, you can access projects stored in the repository or
+commit your project. To download project from the repository, select
+<i>Repository</i> in menu bar and then click on <i>Browse</i>. A new window will
+be opened and you can browse the repository. Select project to view versions.
+You can download version from repository by doubleclick on selected version.  It
+is possible to search the repository by entering keyword.
+</p>
+
+<p>
+To view a simulation log (called simlog) of a project, open the project in
+editor, select <i>View Simlog</i> from toolbar. Now you can see history of
+simulation.
+</p>
+
+<hr />
+<h2><a name="simulation">Simulation</a></h2>
+<p>
+A simulation is done on server-side. To simulate petri net, select <i>Run</i> or
+<i>Simulate</i> from toolbar.  To proccess single step, select <i>Step</i>. To
+proccess full simulation, select <i>Run</i>.
+</p>
+
+<p>
+To view a simulation log (called simlog) of a project, open project in editor
+select <i>View Simlog</i> from toolbar. You can see history of the simulation.
+</p>
+
+
+<hr />
+<h2><a name="syntax">Syntax and operators</a></h2>
+<p>
+You can use these operators in simulation for mode and condition:
+<center>
+    <table>
+        <tr><td>Operator</td><td>Explanation</td></tr>
+        <tr><td>+</td><td>Addition</td></tr>
+        <tr><td>++</td><td>Increment</td></tr>
+        <tr><td>-</td><td>Substraction</td></tr>
+        <tr><td>--</td><td>Decrement</td></tr>
+        <tr><td>/</td><td>Division</td></tr>
+        <tr><td>%</td><td>Modulus</td></tr>
+        <tr><td>*</td><td>Multiplication</td></tr>
+        <tr><td>==</td><td>Test for equality</td></tr>
+        <tr><td>=</td><td>Assign</td></tr>
+        <tr><td>&amp;&amp;</td><td>Logical and</td></tr>
+        <tr><td>||</td><td>Logical or</td></tr>
+        <tr><td>&lt;</td><td>Less than</td></tr>
+        <tr><td>&lt;=</td><td>Less or equal</td></tr>
+        <tr><td>&gt;</td><td>Greater than</tr>
+        <tr><td>&gt;=</td><td>Greater or equal</td></tr>
+    </table>
+</center>
+</p>
+<h3>Example:</h3>
+<p>
+<b>Condition:</b> x &lt;= y + 2 || y == 1 &amp;&amp; (x % 2 == 0)<br/>
+<b>Mode:</b> z1 = x * y; z2 = x - y
+</p>
+<p>
+<i><b>TIP:</b> You can use C-style assign operators like += or *=. You can use
+    brackets to specify priority as well.</i>
+</p>
+
+<hr />
+<h2><a name="appearance">Appearance and configuration</a></h2>
+<p>
+Select <i>Options - Appearance</i> from menu bar. A new window will appear,
+where you can specify theme for Petri net items and a font to be used. You can
+edit default login information which will be loaded on application start up.
+</p>
+<!--------------------------------------------------------------------------- -->
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>

@@ -1,0 +1,1 @@
+Chyba kvoli neexistujucej premennej

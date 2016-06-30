@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <transition point_x="148" point_y="330" name="t1" condition="true" mode="" priority="1"/>
+  <place point_x="178" point_y="479" name="p2" value=""/>
+  <place point_x="178" point_y="201" name="p1" value="1,2"/>
+  <arrow from="t1" to="p2" name="x2"/>
+  <arrow from="p1" to="t1" name="x1"/>
+</pn>

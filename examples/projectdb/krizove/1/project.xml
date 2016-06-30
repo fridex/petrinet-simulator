@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <arrow from="t3" to="p6" name="x10"/>
+  <arrow from="t3" to="p5" name="x9"/>
+  <arrow from="p4" to="t3" name="x8"/>
+  <arrow from="p3" to="t3" name="x7"/>
+  <arrow from="t2" to="p4" name="x6"/>
+  <arrow from="t1" to="p3" name="x5"/>
+  <arrow from="p2" to="t2" name="x4"/>
+  <arrow from="p2" to="t1" name="x3"/>
+  <arrow from="p1" to="t2" name="x2"/>
+  <arrow from="p1" to="t1" name="x1"/>
+  <place point_x="577" point_y="713" name="p6" value=""/>
+  <place point_x="372" point_y="717" name="p5" value=""/>
+  <place point_x="606" point_y="516" name="p4" value=""/>
+  <place point_x="342" point_y="517" name="p3" value=""/>
+  <place point_x="528" point_y="232" name="p2" value="1,2,3"/>
+  <place point_x="420" point_y="231" name="p1" value="-1,1,2"/>
+  <transition point_x="445" point_y="576" name="t3" condition="x7 != 0 &amp;&amp; x8 != 0" mode="x9 = x8; x10=x7" priority="1"/>
+  <transition point_x="592" point_y="404" name="t2" condition="x2&gt;1 &amp;&amp; x4&lt;=1" mode="x6 = x2+x4-1" priority="1"/>
+  <transition point_x="292" point_y="410" name="t1" condition="x1&lt;=1 &amp;&amp; x3&gt;1" mode="x5 = x1+x3-1" priority="1"/>
+</pn>
+

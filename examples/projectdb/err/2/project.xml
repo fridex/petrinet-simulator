@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <arrow from="prechod" to="p2" name="x2"/>
+  <arrow from="p1" to="prechod" name="x1"/>
+  <transition point_x="484" point_y="465" name="prechod" condition="NE == 1" mode="x2 = 1" priority="1"/>
+  <place point_x="515" point_y="600" name="p2" value=""/>
+  <place point_x="515" point_y="345" name="p1" value="1,2"/>
+</pn>
+

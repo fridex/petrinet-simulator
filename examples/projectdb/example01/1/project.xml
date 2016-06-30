@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <arrow from="p1" to="t1" name="x"/>
+  <arrow from="p2" to="t1" name="y"/>
+  <arrow from="p3" to="t1" name="z"/>
+  <arrow from="t1" to="p4" name="a"/>
+  <place point_x="263" point_y="158" name="p1" value="3,8,10"/>
+  <place point_x="335" point_y="155" name="p2" value="5"/>
+  <place point_x="406" point_y="157" name="p3" value="2,1"/>
+  <place point_x="332" point_y="436" name="p4" value=""/>
+  <transition point_x="303" point_y="294" name="t1" condition="x&gt;y  &amp;&amp; z&gt;1" mode="a=x+y+z" priority="1"/>
+</pn>

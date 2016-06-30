@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <place point_x="180" point_y="282" name="p1" value="1, 2, 3"/>
+  <place point_x="179" point_y="569" name="p3" value=""/>
+  <transition point_x="149" point_y="441" name="t1" condition="x &lt;= 2 &amp;&amp; y &lt;= 2" mode="z = x + y" priority="1"/>
+  <arrow from="p1" to="t1" name="x"/>
+  <arrow from="t1" to="p3" name="z"/>
+  <place point_x="417" point_y="327" name="p2" value="3,2,1"/>
+  <arrow from="p2" to="t1" name="y"/>
+</pn>
+

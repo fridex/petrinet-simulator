@@ -1,0 +1,3 @@
+mir0:heslo
+fridex:heslo
+user:user

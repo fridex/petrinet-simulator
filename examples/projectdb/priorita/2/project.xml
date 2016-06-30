@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pn>
+  <arrow from="p1" to="t1" name="x1"/>
+  <arrow from="p2" to="t2" name="x2"/>
+  <arrow from="t1" to="p3" name="x3"/>
+  <arrow from="t2" to="p3" name="x4"/>
+  <transition point_x="400" point_y="168" name="t1" condition="true" mode="x3 = x1 + 1" priority="2"/>
+  <transition point_x="546" point_y="168" name="t2" condition="true" mode="x4 = x2" priority="1"/>
+  <place point_x="431" point_y="80" name="p1" value="1,2"/>
+  <place point_x="577" point_y="81" name="p2" value="1,2"/>
+  <place point_x="562" point_y="301" name="p3" value=""/>
+</pn>

@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<!--
+     Specifikacia datovych suborov pouzitych v programe.
+     Autori:
+       Lisik Miroslav <xlisik00@stud.fit.vutbr.cz>
+       Pokorny Fridolin <fridex.devel@gmail.com>
+-->
+    <qresource>
+        <file>files/help.html</file>
+        <file>files/arrow.png</file>
+        <file>files/place.png</file>
+        <file>files/transition.png</file>
+        <file>files/run.png</file>
+        <file>files/step.png</file>
+        <file>files/simlog.png</file>
+        <file>files/move.png</file>
+        <file>files/delete.png</file>
+        <file>files/edit.png</file>
+        <file>files/icon.png</file>
+    </qresource>
+</RCC>
